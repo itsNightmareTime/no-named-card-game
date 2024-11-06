@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsxechccirase"
-path="res://.godot/imported/sprite.png-611b27fb5172c817e908bb93fc3078d3.ctex"
+uid="uid://dausn8qqyscrg"
+path="res://.godot/imported/heartJack.png-12728ab67e323d643ae7c4191eb35ce7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Cards/sprite.png"
-dest_files=["res://.godot/imported/sprite.png-611b27fb5172c817e908bb93fc3078d3.ctex"]
+source_file="res://assets/Cards/heartJack.png"
+dest_files=["res://.godot/imported/heartJack.png-12728ab67e323d643ae7c4191eb35ce7.ctex"]
 
 [params]
 
