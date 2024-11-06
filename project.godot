@@ -27,9 +27,15 @@ ProjectUISoundController="*res://addons/maaacks_game_template/base/scenes/autolo
 
 enabled=PackedStringArray("res://addons/maaacks_game_template/plugin.cfg")
 
+[file_customization]
+
+folder_colors={
+"res://assets/Cards/": "orange"
+}
+
 [internationalization]
 
-locale/translations=PackedStringArray("res://addons/maaacks_game_template/base/translations/menus_translations.en.translation", "res://addons/maaacks_game_template/base/translations/menus_translations.fr.translation")
+locale/translations=PackedStringArray("res://addons/maaacks_game_template/base/translations/menus_translations.en.translation")
 
 [maaacks_game_template]
 

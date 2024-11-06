@@ -1,16 +1,16 @@
 [gd_scene load_steps=12 format=3 uid="uid://c3smj7vbilknv"]
 
 [ext_resource type="Script" path="res://addons/maaacks_game_template/extras/scripts/pause_menu_controller.gd" id="1_c1enm"]
-[ext_resource type="PackedScene" path="res://scenes/overlaid_menus/pause_menu.tscn" id="2_r0j81"]
+[ext_resource type="PackedScene" uid="uid://bwhlvu6aj6fsc" path="res://scenes/overlaid_menus/pause_menu.tscn" id="2_r0j81"]
 [ext_resource type="Script" path="res://addons/maaacks_game_template/extras/scripts/level_list_loader.gd" id="3_j8qj5"]
-[ext_resource type="PackedScene" path="res://addons/maaacks_game_template/base/scenes/music_players/background_music_player.tscn" id="4_4cy8q"]
-[ext_resource type="PackedScene" path="res://scenes/loading_screen/level_loading_screen.tscn" id="5_xdfnh"]
+[ext_resource type="PackedScene" uid="uid://bkcsjsk2ciff" path="res://addons/maaacks_game_template/base/scenes/music_players/background_music_player.tscn" id="4_4cy8q"]
+[ext_resource type="PackedScene" uid="uid://cjle5sf35uq5s" path="res://scenes/loading_screen/level_loading_screen.tscn" id="5_xdfnh"]
 [ext_resource type="Script" path="res://scenes/game_scene/configurable_sub_viewport.gd" id="6_87j2k"]
 [ext_resource type="Script" path="res://scenes/game_scene/input_display_label.gd" id="7_dpg0j"]
 [ext_resource type="Script" path="res://addons/maaacks_game_template/extras/scripts/level_list_manager.gd" id="8_kjw0f"]
-[ext_resource type="PackedScene" path="res://scenes/overlaid_menus/game_won_menu.tscn" id="9_nllkf"]
-[ext_resource type="PackedScene" path="res://scenes/overlaid_menus/level_lost_menu.tscn" id="10_4uyed"]
-[ext_resource type="PackedScene" path="res://scenes/overlaid_menus/level_won_menu.tscn" id="11_bl1mt"]
+[ext_resource type="PackedScene" uid="uid://bon4ugb06emfr" path="res://scenes/overlaid_menus/game_won_menu.tscn" id="9_nllkf"]
+[ext_resource type="PackedScene" uid="uid://bfiw6miu8ae8s" path="res://scenes/overlaid_menus/level_lost_menu.tscn" id="10_4uyed"]
+[ext_resource type="PackedScene" uid="uid://dtbjsd2js1edx" path="res://scenes/overlaid_menus/level_won_menu.tscn" id="11_bl1mt"]
 
 [node name="GameUI" type="Control"]
 layout_mode = 3
@@ -32,6 +32,7 @@ files = Array[String](["res://scenes/game_scene/levels/level_1.tscn", "res://sce
 directory = "res://scenes/game_scene/levels"
 
 [node name="BackgroundMusicPlayer" parent="." instance=ExtResource("4_4cy8q")]
+bus = &"Master"
 
 [node name="LevelLoadingScreen" parent="." instance=ExtResource("5_xdfnh")]
 visible = false
@@ -49,7 +50,7 @@ stretch = true
 handle_input_locally = false
 audio_listener_enable_2d = true
 audio_listener_enable_3d = true
-size = Vector2i(1280, 720)
+size = Vector2i(1152, 648)
 render_target_update_mode = 4
 script = ExtResource("6_87j2k")
 

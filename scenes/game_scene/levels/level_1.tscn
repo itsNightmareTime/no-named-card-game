@@ -29,15 +29,9 @@ layout_mode = 2
 theme_override_constants/separation = 32
 script = ExtResource("2_3ugi6")
 
-[node name="LoseButton" type="Button" parent="MarginContainer/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-text = "Lose"
-
 [node name="WinButton" type="Button" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Win"
 
-[connection signal="pressed" from="MarginContainer/HBoxContainer/LoseButton" to="." method="_on_lose_button_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/WinButton" to="." method="_on_win_button_pressed"]
